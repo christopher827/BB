@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
+import Home from "./Pages/Home"
+import About from "./Pages/About"
+import ContactUs from "./Pages/ContactUs"
+import OurPartners from "./Pages/OurPartners"
+import PageNotFound from "./Pages/PageNotFound"
+import Login from "./Pages/LogIn"
+import CompetitionandAwards from "./Pages/CompetitonandAwards"
+import DIYSchoolBeautification from "./Pages/DIYSchoolBeautification"
+import DigitalGames from "./Pages/DigitalGames"
+import FrequentlyAskedQuestions from "./Pages/FrequentlyAskedQuestions"
+import FeedBack from './Pages/FeedBack';
 import './App.css';
+import Resources from './Pages/Resources';
+import OrderABin from './Pages/OrderABin';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+    <Navbar/>
+<Routes>
+  <Route path='/' element={<Home/>}/>
+  <Route path='/about' element={<About/>}/>
+  <Route path='/contactus' element={<ContactUs/>}/>
+  <Route path='/ourpartners' element={<OurPartners/>}/>
+  <Route path='/login' element={<Login/>}/>
+  <Route path='/competitionsandawards' element={<CompetitionandAwards/>}/>
+  <Route path='/diyschoolbeautification' element={<DIYSchoolBeautification/>}/>
+  <Route path='/digitalgames' element={<DigitalGames/>}/>
+  <Route path='/resources' element={<Resources/>}/>
+  <Route path='/frequentlyaskedquestions' element={<FrequentlyAskedQuestions/>}/>
+  <Route path='/orderabin' element={<OrderABin/>}/>
+  <Route path='/feedback' element={<FeedBack/>}/>
+  <Route path='*' element={<PageNotFound/>}/>
+  </Routes>
+  
+  <Footer/>
     </div>
   );
 }
