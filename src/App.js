@@ -13,14 +13,10 @@ import FeedBack from './Pages/FeedBack';
 import './App.css';
 import Resources from './Pages/Resources';
 import OrderABin from './Pages/OrderABin';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-
 
 function App() {
   return (
     <div className="">
-    <Navbar/>
 <Routes>
   <Route path='/' element={<Home/>}/>
   <Route path='/about' element={<About/>}/>
@@ -37,7 +33,6 @@ function App() {
   <Route path='*' element={<PageNotFound/>}/>
   </Routes>
   
-  <Footer/>
     </div>
   );
 }

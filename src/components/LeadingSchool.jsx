@@ -21,6 +21,7 @@ function LeadingSchool() {
         Click Here
       </button>
     </a>
+    
   </div>
 </div>
   )

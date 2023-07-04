@@ -9,12 +9,9 @@ function LogIn() {
   return (
     <div>
 <div className="font-sans">
-<div className="relative min-h-screen flex flex-col sm:justify-center items-center  ">
 
-<div className="relative sm:max-w-sm w-full">
-<div className="card shadow-lg  w-full h-full rounded-3xl absolute  transform -rotate-9"></div>
-<div className="card shadow-lg  w-full h-full rounded-3xl absolute  transform rotate-9"></div>
-<div className="relative w-full rounded-3xl  px-6 py-4 bg-gray-100 shadow-md">
+<div className=" sm:max-w-sm ">
+<div className=" rounded-3xl  px-6 py-4 bg-gray-100 shadow-md mt-10 ">
 
 <label htmlFor="" className="block mt-3 text-m text-gray-900 text-center font-semibold">
 You get your login details once you order a bin
@@ -48,7 +45,6 @@ Order a Bin                </button>
 </div>
 </form>
 
-</div>
 </div>
 </div>
 </div>  

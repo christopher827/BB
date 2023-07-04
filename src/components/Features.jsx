@@ -53,10 +53,10 @@ const features = [
   ];
 function Features() {
   return (
-<div className="py-12 ">
+<div className="py-2 bg-green-200">
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div className="lg:text-center">
-<p className="mt-2 text-3xl leading-8 font-bold  sm:text-4xl">Every School Benefits! </p>
+<p className="mt-2 text-3xl leading-8 font-bold  sm:text-4xl text-blue-600">Every School Benefits! </p>
         </div>
 
 <div className="mt-10">
@@ -67,7 +67,7 @@ function Features() {
 <div className="absolute flex items-center justify-center h-12 w-12 rounded-md  text-zinc-800">
 <feature.icon className="h-6 w-6" aria-hidden="true" />
  </div>
-<p className="ml-16 text-lg leading-6 font-medium ">
+<p className="ml-16 text-lg leading-6 font-medium text-blue-600 ">
  {feature.name}
  </p>
       </dt>

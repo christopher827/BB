@@ -1,12 +1,11 @@
 import React from 'react'
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
 import ContactImg from '../assets/contact.svg'
-import FeedbackImg from "../assets/feedback.svg"
 
 function ContactUs() {
   return (
     <div>
-<section className="pt-24 text-blackOlive md:px-28 h-screen">
+<section className="text-blackOlive md:px-28 ">
 <div>
 <h1 className='text-5xl font-nunito px-5 leading-normal'> Contact Us </h1>
 </div>
