@@ -10,6 +10,7 @@ import WhyRecycle from "../components/WhyRecycle";
 import WhatIs from "../components/WhatIs";
 import LawmasPartnership from "../components/LawmasPartnership";
 import Announcement from "./Announcement";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
       <OrderABin />
       <ContactUs />
       <OurPartners />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -2,6 +2,8 @@ import React from "react";
 import AnimatedText from "./AnimatedText";
 import { motion } from "framer-motion";
 import bin from "../assets/bins.jpg";
+import {FaRecycle , FaTrash,} from "react-icons/fa"
+import { FaHandsHolding} from "react-icons/fa6";
 const textVariants = {
   initial: {
     x: -100,
@@ -38,9 +40,18 @@ function WhatIs() {
       <div className=" relative">
         <img src={bin} alt="" className=" lg:w-[70rem] rounded-md" />
         <div className=" max-[1300px]:hidden">
-          <span className=" absolute h-[80px] w-[80px] flex justify-center items-center bg-[#ffa2bc] bottom-[10rem] right-[-3rem] shadow-[10px_32px_71px_1px_rgba(0,0,0,0.02)]"></span>
-          <span className=" absolute h-[80px] w-[80px] rounded-full flex justify-center items-center bg-[#ffc147] bottom-[80px] right-[80px] shadow-[10px_32px_71px_1px_rgba(0,0,0,0.02)]"></span>
-          <span className=" absolute h-[80px] w-[80px] rounded-lg flex justify-center items-center bg-[#4483f3] bottom-[-70px] right-[3px] shadow-[10px_32px_71px_1px_rgba(0,0,0,0.02)]"></span>
+          <span className=" absolute h-[80px] w-[80px] flex justify-center items-center bg-[#ffa2bc] bottom-[10rem] right-[-3rem] shadow-[10px_32px_71px_1px_rgba(0,0,0,0.02)]">
+
+            <FaRecycle color=" white" size={40}/>
+          </span>
+          <span className=" absolute h-[80px] w-[80px] rounded-full flex justify-center items-center bg-[#ffc147] bottom-[80px] right-[80px] shadow-[10px_32px_71px_1px_rgba(0,0,0,0.02)]">
+
+          <FaTrash color=" white" size={35}/>
+          </span>
+          <span className=" absolute h-[80px] w-[80px] rounded-lg flex justify-center items-center bg-[#4483f3] bottom-[-60px] right-[3px] shadow-[10px_32px_71px_1px_rgba(0,0,0,0.02)]">
+
+      <FaHandsHolding size={40} color="white" />
+          </span>
         </div>
       </div>
     </div>

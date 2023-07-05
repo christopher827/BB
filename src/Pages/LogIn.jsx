@@ -51,11 +51,11 @@ function LogIn() {
               </div>
 
               <div className="">
-                <Link to="/orderabin">
+                <a href="https://buylawmabin.com">
                   <button className="bg-[#4383f2] w-full hover:bg-[#3466bd] px-4 py-3 rounded-md cursor-pointer text-white  transition duration-200 ease-in-out ">
                     Order a Bin{" "}
                   </button>
-                </Link>
+                </a>
               </div>
             </form>
           </div>
