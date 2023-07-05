@@ -1,6 +1,6 @@
-import React from 'react'
-import LawmaLogo from "../assets/lawmaLogo.png"
-import LagosLogo from "../assets/LagosLogo.png"
+import React from "react";
+import LawmaLogo from "../assets/lawmaLogo.png";
+import LagosLogo from "../assets/LagosLogo.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -31,13 +31,15 @@ function OurPartners() {
   };
 
   return (
-    <div className="container mx-auto px-8 pt-12">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-blue font-black leading-7 md:leading-10">
-Our Partners    </h1>
+    <div className="  px-6 lg:px-36 pb-[3rem] pt-[3rem] bg-[#a8c8ff25]">
+
+      <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl  font-bold text-center  leading-7 md:leading-10  mb-6 ">
+        Our Partners{" "}
+      </h1>
 
       <Slider className="customer-logos" {...settings}>
         <div className="slide">
-          <img src={LawmaLogo} alt="Adidas Logo"  />
+          <img src={LawmaLogo} alt="Adidas Logo" />
         </div>
         <div className="slide">
           <img src={LagosLogo} alt="Facebook Logo" />
@@ -63,4 +65,5 @@ Our Partners    </h1>
       </Slider>
     </div>
   );
-}export default OurPartners
+}
+export default OurPartners;
